@@ -1,1 +1,232 @@
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
+
+interface User {
+    void viewProfile(String username);
+
+    void viewProfile();
+
+    void logout();
+
+    void login();
+
+    void createPost();
+
+    void createPost(String authors, String contents);
+}
+
+public class Main {
+    public static void main(String[] args) {
+        SocialNetwork beginnerclass = new SocialNetwork();
+        //  1. პროფილის ნახვა
+        //   beginnerclass.viewProfile("სახელი");
+
+        //  2. პოსტის შექმნა
+        //   beginnerclass.createPost("სახელი", "შინაარსი");
+        beginnerclass.createPost("akaki", "programisti");
+
+    }
+}
+
+
+class SocialNetwork implements User {
+    akaki objakaki = new akaki();
+    giorgi objgiorgi = new giorgi();
+    koba objkoba = new koba();
+    dati objdati = new dati();
+    nodari objnodari = new nodari();
+
+    @Override
+    public void viewProfile(String username) {
+        if (username.equals(objgiorgi.name)) {
+            System.out.println(objgiorgi);
+        } else if (username.equals(objakaki.name)) {
+            System.out.println(objakaki);
+        } else if (username.equals(objkoba.name)) {
+            System.out.println(objkoba);
+        } else if (username.equals(objdati.name)) {
+            System.out.println(objdati);
+        } else if (username.equals(objnodari.name)) {
+            System.out.println(objnodari);
+        } else {
+            System.out.println("momxmarebeli ararsebobs");
+        }
+    }
+
+    @Override
+    public void viewProfile() {
+        System.out.println("brchxilebshi chaweret momxmareblis saxeli");
+    }
+
+    @Override
+    public void logout() {
+
+    }
+
+    @Override
+    public void login() {
+
+    }
+
+    @Override
+    public void createPost() {
+
+    }
+
+    @Override
+    public void createPost(String authors, String contents) {
+        LocalDate date = LocalDate.now();
+        System.out.println("author " + authors);
+        System.out.println("content __ " + contents);
+        System.out.println(date);
+
+
+    }
+}
+
+
+class akaki {
+    public String username = "akaki leqvinadze";
+    public String name = "akaki";
+    public String bio = "programisti";
+
+    public void post() {
+        String author = "akaki";
+        String title;
+        String content = "var programisti";
+        LocalDate date = LocalDate.now();
+        System.out.println("author " + author);
+        System.out.println("content __ " + content);
+        System.out.println(date);
+        List megobrebi = new ArrayList<>();
+        megobrebi.add("giorgi");
+        megobrebi.add("koba");
+    }
+
+    @Override
+    public String toString() {
+        return "akaki{" +
+                "username='" + username + '\'' +
+                ", name='" + name + '\'' +
+                ", bio='" + bio + '\'' +
+                '}';
+
+    }
+}
+
+class giorgi {
+    public String username = "giorgi medzvelia";
+    public String name = "giorgi";
+    public String bio = "eqimi";
+
+    public void post() {
+        String author = "giorgi";
+        String title;
+        String content = "var eqimi";
+        LocalDate date = LocalDate.now();
+        System.out.println("author " + author);
+        System.out.println("content __ " + content);
+        System.out.println(date);
+        ;
+        ;
+        ;
+    }
+
+    @Override
+    public String toString() {
+        return "giorgi{" +
+                "username='" + username + '\'' +
+                ", name='" + name + '\'' +
+                ", bio='" + bio + '\'' +
+                '}';
+    }
+}
+
+class koba {
+    public String username = "koba ";
+    public String name = "koba";
+    public String bio = "gamyidveli";
+
+    public void post() {
+        String author = "koba";
+        String title;
+        String content = "var  gamyidveli";
+        LocalDate date = LocalDate.now();
+        System.out.println("author " + author);
+        System.out.println("content __ " + content);
+        System.out.println(date);
+        ;
+        ;
+        ;
+    }
+
+    @Override
+    public String toString() {
+        return "koba{" +
+                "username='" + username + '\'' +
+                ", name='" + name + '\'' +
+                ", bio='" + bio + '\'' +
+                '}';
+    }
+}
+
+class dati {
+    public String username = "dati balanchivadze";
+    public String name = "dati";
+    public String bio = "mshenebeli";
+
+    public void post() {
+        String author = "dati";
+        String title;
+        String content = "var mshenebeli";
+        LocalDate date = LocalDate.now();
+        System.out.println("author " + author);
+        System.out.println("content __ " + content);
+        System.out.println(date);
+        ;
+        ;
+        ;
+    }
+
+    @Override
+    public String toString() {
+        return "dati{" +
+                "username='" + username + '\'' +
+                ", name='" + name + '\'' +
+                ", bio='" + bio + '\'' +
+                '}';
+    }
+}
+
+class nodari {
+    public String username = "nodari kublashvili";
+    public String name = "nodari";
+    public String bio = "biznesmeni";
+
+    public void post() {
+        String author = "nodari";
+        String title;
+        String content = "var biznesmeni";
+        LocalDate date = LocalDate.now();
+        System.out.println("author " + author);
+        System.out.println("content __ " + content);
+        System.out.println(date);
+        ;
+        ;
+        ;
+    }
+
+    @Override
+    public String toString() {
+        return "nodari{" +
+                "username='" + username + '\'' +
+                ", name='" + name + '\'' +
+                ", bio='" + bio + '\'' +
+                '}';
+    }
+}
+
+
+
 

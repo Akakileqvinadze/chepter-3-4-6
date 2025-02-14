@@ -34,3 +34,25 @@ public class Main {
 
     }
 }
+
+
+ 6. დაწერეთ რეკურსიული ფუნქცია რიცხვის ციფრების ჯამის საპოვნელად.
+
+
+     import java.io.*;
+
+
+public class Main {
+    public static void main(String[] args)  {
+        int x=5;
+        int y=10;
+        method(x,y);
+    }
+    public static void method(int n,int z) {
+        int pasuxi = n + z;
+        System.out.println(pasuxi);
+        method(n,z);
+
+    }
+}
+

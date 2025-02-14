@@ -1,3 +1,31 @@
+
+//  2. დაბეჭდეთ რიცხვები n-დან 1-მდე რეკურსიის გამოყენებით.
+
+import java.io.*;
+
+
+public class Main {
+    public static void main(String[] args) {
+        //0 5
+        double n = 0;
+        sum(n);
+    }
+
+    //sum(n)=n+sum(n−1) და sum(0)=0
+    public static int sum(double n) {
+        System.out.println(n);
+        if (n==1.0999999999999999)
+        {
+            return 0;
+        }
+        sum(n+0.1);
+
+        return 0;
+    }
+}
+
+
+
 //  4. დაწერეთ რეკურსიული ფუნქცია სტრიქონის შესაბრუნებლად.
 
 import java.io.*;

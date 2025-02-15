@@ -22,34 +22,6 @@ public class Main {
 
 }
 
-// 3. გამოთვალეთ n-ე ფიბონაჩის რიცხვი რეკურსიულად.
-ფორმულა: F(n)=F(n−1)+F(n−2). F(0)=0, F(1)=1.
-
-import java.io.*;
-import java.util.Scanner;
-
-public class Main {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int cvladi = scanner.nextInt();
-        System.out.println(F(cvladi));
-    }
-
-   
-    public static int F(int n) {
-        if (n==0){
-            return 0;
-        } else if (n==1) {
-            return 1;
-        }
-        return F(n-1)+F(n-2);
-    }
-
-}
-
-
-
-
 
 
 //  2. დაბეჭდეთ რიცხვები n-დან 1-მდე რეკურსიის გამოყენებით.
@@ -77,6 +49,30 @@ public class Main {
     }
 }
 
+// 3. გამოთვალეთ n-ე ფიბონაჩის რიცხვი რეკურსიულად.
+ფორმულა: F(n)=F(n−1)+F(n−2). F(0)=0, F(1)=1.
+
+import java.io.*;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int cvladi = scanner.nextInt();
+        System.out.println(F(cvladi));
+    }
+
+   
+    public static int F(int n) {
+        if (n==0){
+            return 0;
+        } else if (n==1) {
+            return 1;
+        }
+        return F(n-1)+F(n-2);
+    }
+
+}
 
 
 //  4. დაწერეთ რეკურსიული ფუნქცია სტრიქონის შესაბრუნებლად.

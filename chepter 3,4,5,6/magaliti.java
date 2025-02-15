@@ -1,4 +1,29 @@
 
+// 1.დაწერეთ რეკურსიული ფუნქცია პირველი n ნატურალური რიცხვების ჯამის გამოსათვლელად.
+ფორმულა: sum(n)=n+sum(n−1) და sum(0)=0
+
+import java.io.*;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int cvladi = scanner.nextInt();
+        System.out.println(sum(cvladi));
+    }
+
+    //sum(n)=n+sum(n−1) და sum(0)=0
+    public static int sum(int n) {
+        if (n==0){
+            return 0;
+        }
+        return n+sum(n-1);
+    }
+
+}
+
+
+
 //  2. დაბეჭდეთ რიცხვები n-დან 1-მდე რეკურსიის გამოყენებით.
 
 import java.io.*;

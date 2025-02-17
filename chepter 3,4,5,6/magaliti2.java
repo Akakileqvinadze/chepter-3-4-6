@@ -75,3 +75,12 @@ public class Main {
 interface methodoperation<T>{
     T apply(T a ,T b);
 }
+
+
+
+
+
+
+
+
+
